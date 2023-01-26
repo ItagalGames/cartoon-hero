@@ -1,0 +1,64 @@
+body{
+	margin: 0;
+	text-align: center;
+}
+
+header{
+
+}
+
+.logoimg{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	height: 25%;
+	width: 25%;
+}
+
+.rightimg{
+	display: block;
+	float: right;
+	height: 737px;
+	width: 367px;
+}
+
+.leftimg{
+	display: block;
+	float: left;
+	height: 737px;
+	width: 367px;
+}
+
+.text{
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.gslogo{
+	display: block;
+	height: 5%;
+	width: 5%;
+	position: absolute;
+    bottom: 8px;
+    left: 16px;
+}
+
+.socialicon{
+	height: 3.5%;
+	width: 3.5%;
+}
+
+.social-icons{
+	text-align: left;
+	margin-left: auto;
+	margin-right: auto;
+	height: 100%;
+	width: 100%;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 65%;
+    transform: translateX(-65%);
+}
