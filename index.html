@@ -7,7 +7,8 @@
 	<link rel="icon" href="img/favicon.png">
 	<link rel="stylesheet" type="text/css" href="css/hero.css">
 </head>
-<body>
+<body style="background-image: url('img/paperback.jpg');">
+
 
 	<!-- Header -->
 
@@ -21,21 +22,41 @@
 		<img class="rightimg" src="img/chicken-surf.png">
 
 		<!-- Catchphrase -->
-		<h1>Radical</h1>
+		<h1 class="catchphrase">Radical</h1>
 	</header>
 
 
 	<!-- Paragraph -->
 	
-	<p>Welcome to my website dude!<br>I'm Chicken Joe. Joseph. It's long for Joe.<br>You know, we've known each other way back since, like... yesterday, I think it was.<br>No, I'm not from Shiverpool. Dude, I'm from Lake Michigan. That's where I surf. I was the only one around my town who did it.<br>Butt freeze!</p>
+	<p class="text">Welcome to my website dude!<br>I'm Chicken Joe. Joseph. It's long for Joe.<br>You know, we've known each other way back since, like... yesterday, I think it was.<br>No, I'm not from Shiverpool. Dude, I'm from Lake Michigan. That's where I surf. I was the only one around my town who did it.<br>Butt freeze!</p>
+
+	<audio id="audio1" src="audio/drive.wav" autoplay></audio>
+	<audio id="audio2" src="audio/beach.wav" autoplay></audio>
+
+	<button id="play-button">Play</button>
+
+	<script>
+  	// Get the audio elements
+  	var audio1 = document.getElementById("audio1");
+  	var audio2 = document.getElementById("audio2");
+
+  	// Get the play button
+  	var playButton = document.getElementById("play-button");
+
+  	// Add event listener to play button
+  	playButton.addEventListener("click", function() {
+    // Play the audio files
+    audio1.play();
+    audio2.play();
+  	});
+	</script>
+
+	<div class="gif">
+	<img src="img/joe.gif" alt="example gif">
+	</div>
 
 	<!-- Footer -->
 	<footer>
-		<div class="footer">
-		<!-- Gone Searchin' Logo -->
-
-		<img class="gslogo" src="img/gslogo.png">
-
 		<div class="social-icons">
 		<!-- Instagram -->
 
@@ -54,11 +75,23 @@
 		<a href="https://www.youtube.com/watch?v=jAqkiw0bsg4"><img class="socialicon" src="img/yt.png" onmouseover="this.src='img/yt-hover.png'" onmouseout="this.src='img/yt.png'"></a>
 	    </div>
 
-		<!-- Copyright Notice -->
-	</div>
 	</footer>
 
-	<h2>Copyright Surf's Up 2023</h2>
+	<script>
+  	window.onload = function() {
+    var audio1 = document.getElementById("audio1");
+    var audio2 = document.getElementById("audio2");
+    audio1.play();
+    audio2.play();
+  	}
+	</script>
 
+		<!--
+		<div class="footerbackground">
+		
+		 Footer Background
+		<img src="bottom-paper.png">
+		</div>
+	-->
 </body>
 </html>

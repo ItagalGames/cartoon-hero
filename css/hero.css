@@ -1,7 +1,25 @@
 body{
-	margin: 0;
-	text-align: center;
+	position: fixed;
+	top: 0;
+   	left: 0;
+   	right: 0;
+   	bottom: 0;
+   	margin: auto;
+   	width: 100%;
+   	height: 100%;
+   	overflow: hidden;
+   	text-align: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
 }
+
+@font-face {
+    font-family: 'CheapMotel'; /* this is the name you'll use in your CSS to apply the font*/
+    src: url('file:///Users/itaybadussi/Documents/Design Assets/FONTS/Retro Font Pack/50s Font Pack/CheapMotel-M3zn.ttf') /* this is the location of the font file*/
+}
+
 
 header{
 
@@ -16,13 +34,18 @@ header{
 }
 
 .rightimg{
+	position: absolute;
+	z-index: -3;
+	right: 0;
 	display: block;
-	float: right;
 	height: 737px;
 	width: 367px;
 }
 
 .leftimg{
+	position: absolute;
+    z-index: -3;
+    margin-top: -50px;
 	display: block;
 	float: left;
 	height: 737px;
@@ -30,35 +53,56 @@ header{
 }
 
 .text{
+	width: 55%;
 	margin-left: auto;
 	margin-right: auto;
-}
+	font-family: 'CheapMotel';
+	color: #7a5928;
 
-.gslogo{
-	display: block;
-	height: 5%;
-	width: 5%;
-	position: absolute;
-    bottom: 8px;
-    left: 16px;
 }
 
 .socialicon{
 	height: 3.5%;
 	width: 3.5%;
-}
-
-.social-icons{
-	text-align: left;
-	margin-left: auto;
-	margin-right: auto;
-	height: 100%;
-	width: 100%;
+	z-index: 0;
 }
 
 footer {
-    position: fixed;
+    background-image: url('bottom-paper.png');
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    position: absolute;
     bottom: 0;
-    left: 65%;
-    transform: translateX(-65%);
+    z-index: -1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 60px;
 }
+
+
+/*
+.footerbackground {
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  bottom: 0;
+}
+*/
+
+
+.catchphrase{
+	font-family: 'CheapMotel';
+	color: #b9e4e8;
+}
+
+.gif {
+	z-index: -4;
+    position: absolute;
+    top: 650px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
