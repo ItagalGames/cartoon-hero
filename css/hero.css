@@ -53,11 +53,15 @@ header{
 }
 
 .text{
+	position: absolute;
+	margin-top: 25px;
+	left: 22.5%;
 	width: 55%;
 	margin-left: auto;
 	margin-right: auto;
 	font-family: 'CheapMotel';
 	color: #7a5928;
+	line-height: 2;
 
 }
 
@@ -93,16 +97,17 @@ footer {
 
 
 .catchphrase{
+	position: absolute;
+	margin-top: -40px;
+	left: 45%;
 	font-family: 'CheapMotel';
-	color: #b9e4e8;
+	color: #ff9510;
 }
 
 .gif {
 	z-index: -4;
     position: absolute;
-    top: 650px;
+    top: 680px;
     left: 50%;
     transform: translateX(-50%);
 }
-
-
